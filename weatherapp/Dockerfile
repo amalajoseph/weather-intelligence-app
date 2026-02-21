@@ -2,8 +2,8 @@ FROM maven:3.9.6-eclipse-temurin-17 AS build
 
 WORKDIR /app
 
-COPY weatherapp/pom.xml .
-COPY weatherapp/src ./src
+COPY weatherapp/application/pom.xml .
+COPY weatherapp/application/src ./src
 
 RUN mvn clean package -DskipTests
 
