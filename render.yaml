@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: weather-intelligence-app
-    runtime: java
-    buildCommand: ./mvnw clean install
-    startCommand: java -jar target/*.jar
